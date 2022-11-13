@@ -1,0 +1,15 @@
+C:\Users\user\Desktop\P412\FinalyMVC Solution\FinallyMVC.Domain\bin\Debug\net5.0\FinallyMVC.Domain.deps.json
+C:\Users\user\Desktop\P412\FinalyMVC Solution\FinallyMVC.Domain\bin\Debug\net5.0\FinallyMVC.Domain.runtimeconfig.json
+C:\Users\user\Desktop\P412\FinalyMVC Solution\FinallyMVC.Domain\bin\Debug\net5.0\FinallyMVC.Domain.runtimeconfig.dev.json
+C:\Users\user\Desktop\P412\FinalyMVC Solution\FinallyMVC.Domain\bin\Debug\net5.0\FinallyMVC.Domain.dll
+C:\Users\user\Desktop\P412\FinalyMVC Solution\FinallyMVC.Domain\bin\Debug\net5.0\FinallyMVC.Domain.pdb
+C:\Users\user\Desktop\P412\FinalyMVC Solution\FinallyMVC.Domain\obj\Debug\net5.0\FinallyMVC.Domain.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\P412\FinalyMVC Solution\FinallyMVC.Domain\obj\Debug\net5.0\FinallyMVC.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\P412\FinalyMVC Solution\FinallyMVC.Domain\obj\Debug\net5.0\FinallyMVC.Domain.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\P412\FinalyMVC Solution\FinallyMVC.Domain\obj\Debug\net5.0\FinallyMVC.Domain.AssemblyInfo.cs
+C:\Users\user\Desktop\P412\FinalyMVC Solution\FinallyMVC.Domain\obj\Debug\net5.0\FinallyMVC.Domain.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\P412\FinalyMVC Solution\FinallyMVC.Domain\obj\Debug\net5.0\FinallyMVC.Domain.dll
+C:\Users\user\Desktop\P412\FinalyMVC Solution\FinallyMVC.Domain\obj\Debug\net5.0\refint\FinallyMVC.Domain.dll
+C:\Users\user\Desktop\P412\FinalyMVC Solution\FinallyMVC.Domain\obj\Debug\net5.0\FinallyMVC.Domain.pdb
+C:\Users\user\Desktop\P412\FinalyMVC Solution\FinallyMVC.Domain\obj\Debug\net5.0\FinallyMVC.Domain.genruntimeconfig.cache
+C:\Users\user\Desktop\P412\FinalyMVC Solution\FinallyMVC.Domain\obj\Debug\net5.0\ref\FinallyMVC.Domain.dll
