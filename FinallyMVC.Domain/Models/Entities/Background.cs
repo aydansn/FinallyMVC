@@ -9,10 +9,9 @@ namespace FinallyMVC.Domain.Models.Entities
 {
     public class Background : BaseEntity
     {
-        public DateTime? Date { get; set; }
-        
-        public string Title { get; set; }
-
+        public string Date { get; set; }
+        public string Place { get; set; }
         public string Body { get; set; }
+        public string Profession { get; set; }
     }
 }

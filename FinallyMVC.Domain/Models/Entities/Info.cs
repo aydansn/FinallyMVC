@@ -9,10 +9,8 @@ namespace FinallyMVC.Domain.Models.Entities
 {
     public class Info: BaseEntity
     {
-        public string Image { get; set; }
-
+        public string ImageURL { get; set; }
         public string Phone { get; set; }
-
         public string Body { get; set; }
     }
 }

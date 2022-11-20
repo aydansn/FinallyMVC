@@ -7,14 +7,8 @@ using System.Threading.Tasks;
 
 namespace FinallyMVC.Domain.Models.Entities
 {
-    public class Experience : BaseEntity
+    public class Experience : Background
     {
-        public DateTime? Date { get; set; }
-        public string Image { get; set; }
-        public string Title { get; set; }
-
-        public string Body { get; set; }
-
-
+        public string ImageURL { get; set; }
     }
 }

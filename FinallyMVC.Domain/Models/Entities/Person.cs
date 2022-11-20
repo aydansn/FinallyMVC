@@ -14,6 +14,5 @@ namespace FinallyMVC.Domain.Models.Entities
         public string Fax { get; set; }
         public string EMail { get; set; }
         public string WebSite { get; set; }
-       
     }
 }

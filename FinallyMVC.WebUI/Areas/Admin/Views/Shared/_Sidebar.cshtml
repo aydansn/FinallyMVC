@@ -1,0 +1,79 @@
+﻿
+
+<nav class="pcoded-navbar">
+    <div class="pcoded-inner-navbar main-menu">
+        <div class="pcoded-navigatio-lavel">Navigation</div>
+        <ul class="pcoded-item pcoded-left-item">
+            <li>
+                <a asp-controller="home" asp-action="index">
+                    <span class="pcoded-micon"><i class="feather icon-menu"></i></span>
+                    <span class="pcoded-mtext">Ana səhifə</span>
+                </a>
+            </li>
+            <li class="pcoded-hasmenu">
+                <a href="javascript:void(0)">
+                    <span class="pcoded-micon"><i class="feather icon-home"></i></span>
+                    <span class="pcoded-mtext">Məhsullar</span>
+                </a>
+                <ul class="pcoded-submenu">
+                    <li>
+                        <a asp-controller="person" asp-action="index">
+                            <span class="pcoded-mtext">Person</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-controller="background" asp-action="Index">
+                            <span class="pcoded-mtext">Background</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-controller="blog" asp-action="index">
+                            <span class="pcoded-mtext">Blog</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-controller="experience" asp-action="index">
+                            <span class="pcoded-mtext">Experience</span>
+                            <span class="pcoded-badge label label-info ">NEW</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-controller="service" asp-action="index">
+                            <span class="pcoded-mtext">Service</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-controller="skill" asp-action="index">
+                            <span class="pcoded-mtext">Skill</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="pcoded-hasmenu">
+                <a href="javascript:void(0)">
+                    <span class="pcoded-micon"><i class="feather icon-home"></i></span>
+                    <span class="pcoded-mtext">Paylaşımlar</span>
+                </a>
+                <ul class="pcoded-submenu">
+                    <li>
+                        <a asp-controller="Blog" asp-action="index">
+                            <span class="pcoded-mtext">Hamısı</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="pcoded-mtext">Dərc edilmiş paylaşımlar</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="default/dashboard-analytics.html">
+                            <span class="pcoded-mtext">Silinmiş paylaşımlar</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        
+
+        </ul>
+    </div>
+</nav>

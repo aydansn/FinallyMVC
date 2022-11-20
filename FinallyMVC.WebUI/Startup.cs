@@ -1,10 +1,13 @@
 using FinallyMVC.Domain.Models.DataContexts;
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System;
+using System.Linq;
 
 namespace FinallyMVC.WebUI
 {
@@ -25,6 +28,12 @@ namespace FinallyMVC.WebUI
             {
                 cfg.UseSqlServer(configuration.GetConnectionString("cString"));
             });
+            var assemblies = AppDomain.CurrentDomain
+                .GetAssemblies()
+                .Where(a => a.FullName.StartsWith("FinallyMVC."))
+                .ToArray();
+
+            services.AddMediatR(assemblies);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -49,9 +58,14 @@ namespace FinallyMVC.WebUI
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapAreaControllerRoute(name: "defaultAdmin",
+                    areaName: "Admin",
+                    pattern: "admin/{controller=home}/{action=index}/{id?}");
+
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+
             });
         }
     }

@@ -20,7 +20,7 @@ namespace FinallyMVC.Domain.Models.DataContexts
 
         public DbSet<Background> Backgrounds { get; set; }
         public DbSet<Blog> Blogs { get; set; }
-        public DbSet<Contact> Contacs { get; set; }
+        public DbSet<Contact> Contacts { get; set; }
         public DbSet<Experience> Experiences { get; set; }
         public DbSet<Info> Infos { get; set; }
         public DbSet<Person> People { get; set; }
