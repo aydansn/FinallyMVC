@@ -13,7 +13,7 @@ namespace FinallyMVC.Domain.Business.BlogModule
         public int Id { get; set; }
         public string Title { get; set; }
         public string Body { get; set; }
-        public string ImageURl { get; set; }
+        public string ImageURL { get; set; }
         public DateTime? PublishDate { get; set; }
 
         public class BlogEditCommandHandler : IRequestHandler<BlogEditCommand, Blog>
@@ -38,7 +38,7 @@ namespace FinallyMVC.Domain.Business.BlogModule
                 Blog.Id = request.Id;
                 Blog.Title = request.Title;
                 Blog.Body = request.Body;
-                Blog.ImageURL = request.ImageURl;
+                Blog.ImageURL = request.ImageURL;
                 Blog.PublishDate = request.PublishDate;
 
                 await db.SaveChangesAsync(cancellationToken);

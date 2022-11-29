@@ -11,11 +11,11 @@ namespace FinallyMVC.Domain.Business.InfoModule
 {
     public class InfoAllQuery :IRequest<List<Info>>
     {
-        public class InfosAllQueryHandler : IRequestHandler<InfoAllQuery, List<Info>>
+        public class InfoAllQueryHandler : IRequestHandler<InfoAllQuery, List<Info>>
         {
             private readonly AppDbContext db;
 
-            public InfosAllQueryHandler(AppDbContext db)
+            public InfoAllQueryHandler(AppDbContext db)
             {
                 this.db = db;
             }

@@ -10,7 +10,7 @@ namespace FinallyMVC.Domain.Business.ExperienceModule
     public class ExperienceEditCommand : IRequest<Experience>
     {
         public int Id { get; set; }
-        public string ImageURl { get; set; }
+        public string ImageURL { get; set; }
         public class ExperienceEditCommandHandler : IRequestHandler<ExperienceEditCommand, Experience>
         {
             private readonly AppDbContext db;
@@ -31,7 +31,7 @@ namespace FinallyMVC.Domain.Business.ExperienceModule
                 }
 
                 Experience.Id = request.Id;
-                Experience.ImageURL = request.ImageURl;
+                Experience.ImageURL = request.ImageURL;
 
                 await db.SaveChangesAsync(cancellationToken);
 

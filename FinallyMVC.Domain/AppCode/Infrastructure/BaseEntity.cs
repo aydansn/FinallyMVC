@@ -7,5 +7,7 @@ namespace FinallyMVC.Domain.AppCode.Infrastructure
         public int Id { get; set; }
         public DateTime CreatedDate { get; set; } = DateTime.UtcNow.AddHours(4);
         public DateTime? DeletedDate { get; set; }
+
+
     }
 }

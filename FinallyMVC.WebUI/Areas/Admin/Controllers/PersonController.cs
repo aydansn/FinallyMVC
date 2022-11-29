@@ -1,11 +1,14 @@
 ﻿using FinallyMVC.Domain.Business.PersonModule;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 
 namespace FinallyMVC.WebUI.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [AllowAnonymous]
+   
     public class PersonController : Controller
     {
         private readonly IMediator mediator;
@@ -20,24 +23,6 @@ namespace FinallyMVC.WebUI.Areas.Admin.Controllers
             var response = await mediator.Send(query);
             return View(response);
         }
-
-        public IActionResult Create()
-        {
-            return View();
-        }
-
-        [HttpPost]
-        public async Task<IActionResult> Create(PersonCreateCommand command)
-        {
-            var response = await mediator.Send(command);
-            if (response == null)
-            {
-                return View(command);
-            }
-
-            return RedirectToAction(nameof(Index));
-        }
-
         public async Task<IActionResult> Edit(PersonSingleQuery query)
         {
             var response = await mediator.Send(query);
@@ -74,20 +59,5 @@ namespace FinallyMVC.WebUI.Areas.Admin.Controllers
             return View(response);
         }
 
-        [HttpPost]
-        public async Task<IActionResult> Remove(PersonRemoveCommand command)
-        {
-            var response = await mediator.Send(command);
-
-
-            if (response.Error)
-            {
-                return Json(response);
-            }
-
-            var newQuery = new PersonAllQuery();
-            var data = await mediator.Send(newQuery);
-            return PartialView("_ListBody", data);
-        }
     }
 }

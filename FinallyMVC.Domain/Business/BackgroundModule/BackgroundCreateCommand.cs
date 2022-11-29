@@ -2,11 +2,7 @@
 using FinallyMVC.Domain.Models.Entities;
 using MediatR;
 using Microsoft.Extensions.Hosting;
-using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -14,7 +10,6 @@ namespace FinallyMVC.Domain.Business.BackgroundModule
 {
     public class BackgroundCreateCommand :IRequest<Background>
     {
-       
         public string Date { get; set; }
         public string Place { get; set; }
         public string Body { get; set; }
@@ -39,20 +34,11 @@ namespace FinallyMVC.Domain.Business.BackgroundModule
                 Background.Place = request.Place;
                 Background.Body = request.Body;
                 Background.Profession = request.Profession;
-
-
-
                 string physicalPath = Path.Combine(env.ContentRootPath, "wwwroot", "uploads");
-
-
-
                 await db.Backgrounds.AddAsync(Background, cancellationToken);
 
                 await db.SaveChangesAsync(cancellationToken);
-
-
                 return Background;
-
             }
         }
     }

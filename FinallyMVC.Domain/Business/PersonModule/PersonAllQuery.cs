@@ -11,7 +11,7 @@ namespace FinallyMVC.Domain.Business.PersonModule
 {
     public class PersonAllQuery :IRequest<List<Person>>
     {
-        public class PersonsAllQueryHandler : IRequestHandler<PersonAllQuery, List<Person>>
+        public class PersonsAllQueryHandler : IRequestHandler<PersonAllQuery,List<Person>>
         {
             private readonly AppDbContext db;
 

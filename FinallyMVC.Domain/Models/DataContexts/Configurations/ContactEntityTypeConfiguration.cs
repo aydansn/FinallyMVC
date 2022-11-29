@@ -1,10 +1,10 @@
 ﻿using FinallyMVC.Domain.Models.Entities;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using System.Data.Entity.ModelConfiguration;
 
 namespace FinallyMVC.Domain.Models.DataContexts.Configurations
 {
-    public class ContactEntityTypeConfiguration : EntityTypeConfiguration<Contact>
+    public class ContactEntityTypeConfiguration : IEntityTypeConfiguration<Contact>
     {
         public void Configure(EntityTypeBuilder<Contact> builder)
         {

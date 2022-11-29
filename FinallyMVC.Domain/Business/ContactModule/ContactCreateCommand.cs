@@ -1,6 +1,9 @@
-﻿using FinallyMVC.Domain.Models.DataContexts;
+﻿using FinallyMVC.Domain.AppCode.Extensions;
+using FinallyMVC.Domain.Models.DataContexts;
 using FinallyMVC.Domain.Models.Entities;
 using MediatR;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Hosting;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -9,7 +12,7 @@ namespace FinallyMVC.Domain.Business.ContactModule
     public class ContactCreateCommand : IRequest<Contact>
     {
 
-        public string ImageURL { get; set; }
+        public IFormFile Image { get; set; }
         public string Phone { get; set; }
         public string Title { get; set; }
         public string Body { get; set; }
@@ -17,22 +20,25 @@ namespace FinallyMVC.Domain.Business.ContactModule
         public class ContactCreateCommandHandler : IRequestHandler<ContactCreateCommand, Contact>
         {
             private readonly AppDbContext db;
+            private readonly IHostEnvironment env;
 
-            public ContactCreateCommandHandler(AppDbContext db)
+            public ContactCreateCommandHandler(AppDbContext db, IHostEnvironment env)
             {
                 this.db = db;
+                this.env = env;
             }
 
             public async Task<Contact> Handle(ContactCreateCommand request, CancellationToken cancellationToken)
             {
                 var Contact = new Contact()
                 {
-                    ImageURL = request.ImageURL,
                     Phone = request.Phone,
                     Title = request.Title,
                     Body = request.Body
                 };
 
+                Contact.ImageURL = request.Image.GetRandomImagePath("contact");
+                await env.SaveAsync(request.Image, Contact.ImageURL, cancellationToken);
                 await db.Contacts.AddAsync(Contact, cancellationToken);
                 await db.SaveChangesAsync(cancellationToken);
 

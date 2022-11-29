@@ -1,16 +1,11 @@
 ﻿using FinallyMVC.Domain.Models.Entities;
+using FinallyMVC.Domain.Models.Entities.Membership;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Reflection.Emit;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FinallyMVC.Domain.Models.DataContexts
 {
-    public class AppDbContext : DbContext
+    public class AppDbContext : IdentityDbContext<FinallymvcUser, FinallymvcRole,int,FinallymvcUserClaim, FinallymvcUserRole, FinallymvcUserLogin, FinallymvcRoleClaim, FinallymvcUserToken   >//DbContext
     {
         public AppDbContext(DbContextOptions options)
             : base(options)
