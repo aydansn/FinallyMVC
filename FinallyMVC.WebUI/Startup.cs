@@ -33,17 +33,17 @@ namespace FinallyMVC.WebUI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews(
-            //    cfg =>
-            //{
-            //   cfg.ModelBinderProviders.Insert(0, new BooleanBinderProvider());
+                cfg =>
+            {
+                cfg.ModelBinderProviders.Insert(0, new BooleanBinderProvider());
 
-            //    var policyRule = new AuthorizationPolicyBuilder()
-            //                  .RequireAuthenticatedUser()
-            //                  .Build();
+                var policyRule = new AuthorizationPolicyBuilder()
+                              .RequireAuthenticatedUser()
+                              .Build();
 
 
-            //    cfg.Filters.Add(new AuthorizeFilter(policyRule));
-            //}
+                cfg.Filters.Add(new AuthorizeFilter(policyRule));
+            }
             );
 
 
@@ -58,7 +58,8 @@ namespace FinallyMVC.WebUI
             });
 
             services.AddIdentity<FinallymvcUser, FinallymvcRole>()
-                .AddEntityFrameworkStores<AppDbContext>();
+                .AddEntityFrameworkStores<AppDbContext>()
+                .AddDefaultTokenProviders();
 
             services.Configure<IdentityOptions>(cfg =>
             {
@@ -99,39 +100,36 @@ namespace FinallyMVC.WebUI
 
             services.AddAuthentication();
             services.AddAuthorization(
-            //    cfg =>
-            //{
-            //    foreach (var item in AppClaimsProvider.policies)
-            //    {
-            //        cfg.AddPolicy(item, p =>
-            //        {
-            //            //p.RequireClaim(item, "1");
+                cfg =>
+            {
+                foreach (var item in AppClaimsProvider.policies)
+                {
+                    cfg.AddPolicy(item, p =>
+                    {
+                        //p.RequireClaim(item, "1");
 
-            //            p.RequireAssertion(handler => {
+                        p.RequireAssertion(handler =>
+                        {
+                            return handler.User.IsInRole("sa")
+                            || handler.User.HasClaim(c => c.Type.Equals(item) && c.Value.Equals("1"))
+                            ;
+                        });
 
-            //                return handler.User.IsInRole("sa")
-            //                || handler.User.HasClaim(c => c.Type.Equals(item) && c.Value.Equals("1"))
-            //                ;
-
-            //            });
-
-            //        });
-            //    }
-            //}
+                    });
+                }
+            }
             );
-
-
             services.Configure<CryptoServiceOptions>(cfg =>
             {
                 configuration.GetSection("cryptograpy").Bind(cfg);
             });
-            services.AddSingleton<CryptoService>();
+            services.AddSingleton<ICryptoService,CryptoService>();
 
             services.Configure<EmailServiceOptions>(cfg =>
             {
                 configuration.GetSection("emailAccount").Bind(cfg);
             });
-            services.AddSingleton<EmailService>();
+            services.AddSingleton<IEmailService,EmailService>();
 
             services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();
 
@@ -145,7 +143,6 @@ namespace FinallyMVC.WebUI
           services.AddValidatorsFromAssemblies(assemblies, ServiceLifetime.Singleton);
 
         }
-
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {

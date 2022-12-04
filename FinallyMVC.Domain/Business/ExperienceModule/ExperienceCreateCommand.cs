@@ -4,6 +4,7 @@ using FinallyMVC.Domain.Models.Entities;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Hosting;
+using System;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -12,7 +13,7 @@ namespace FinallyMVC.Domain.Business.ExperienceModule
     public class ExperienceCreateCommand : IRequest<Experience>
     {
         public IFormFile ImageURL { get; set; }
-        public string Date { get; set; }
+        public DateTime? Date { get; set; }
         public string Place { get; set; }
         public string Body { get; set; }
         public string Profession { get; set; }
@@ -31,8 +32,8 @@ namespace FinallyMVC.Domain.Business.ExperienceModule
             {
                 var Experience = new Experience()
                 {
-                    
-                    Date = request.Date,
+
+                   Date = DateTime.UtcNow.AddHours(4),
                    Place = request.Place,
                    Body = request.Body,
                    Profession = request.Profession

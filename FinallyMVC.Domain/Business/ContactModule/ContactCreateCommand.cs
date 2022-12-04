@@ -12,7 +12,7 @@ namespace FinallyMVC.Domain.Business.ContactModule
     public class ContactCreateCommand : IRequest<Contact>
     {
 
-        public IFormFile Image { get; set; }
+        public IFormFile ImageURL { get; set; }
         public string Phone { get; set; }
         public string Title { get; set; }
         public string Body { get; set; }
@@ -37,8 +37,8 @@ namespace FinallyMVC.Domain.Business.ContactModule
                     Body = request.Body
                 };
 
-                Contact.ImageURL = request.Image.GetRandomImagePath("contact");
-                await env.SaveAsync(request.Image, Contact.ImageURL, cancellationToken);
+                Contact.ImageURL = request.ImageURL.GetRandomImagePath("contact");
+                await env.SaveAsync(request.ImageURL, Contact.ImageURL, cancellationToken);
                 await db.Contacts.AddAsync(Contact, cancellationToken);
                 await db.SaveChangesAsync(cancellationToken);
 

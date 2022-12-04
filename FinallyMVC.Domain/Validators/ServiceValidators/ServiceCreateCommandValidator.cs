@@ -11,9 +11,6 @@ namespace FinallyMVC.Domain.Validators.ServiceValidators
                 .NotEmpty()
                 .WithMessage("Text adi qeyd edilmeyib");
 
-            RuleFor(b => b.ImageURL)
-          .NotNull()
-          .WithMessage("Sekil secilmeyib");
             RuleFor(b => b.Title)
                                 .NotNull()
                                 .WithMessage("Basliq secilmeyib")

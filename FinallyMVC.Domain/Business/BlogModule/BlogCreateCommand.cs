@@ -14,7 +14,9 @@ namespace FinallyMVC.Domain.Business.BlogModule
     {
         public string Title { get; set; }
         public string Body { get; set; }
-        public IFormFile Image { get; set; }
+        public IFormFile ImageURL { get; set; }
+
+        public DateTime? PublishDate { get; set; }
 
         public class BlogCreateCommandHandler : IRequestHandler<BlogCreateCommand, Blog>
         {
@@ -35,8 +37,8 @@ namespace FinallyMVC.Domain.Business.BlogModule
                     Body = request.Body,
                     PublishDate = DateTime.UtcNow.AddHours(4)
                 };
-                Blog.ImageURL = request.Image.GetRandomImagePath("blog");
-                await env.SaveAsync(request.Image, Blog.ImageURL, cancellationToken);
+                Blog.ImageURL = request.ImageURL.GetRandomImagePath("blog");
+                await env.SaveAsync(request.ImageURL, Blog.ImageURL, cancellationToken);
                 await db.Blogs.AddAsync(Blog, cancellationToken);
                 await db.SaveChangesAsync(cancellationToken);
 

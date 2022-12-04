@@ -1,0 +1,27 @@
+﻿@model SigninCommand
+@{
+    ViewData["Title"] = "Signin";
+    Layout = null;
+}
+
+<h2>Signin</h2>
+
+
+<form method="post">
+
+    <div asp-validation-summary="All"></div>
+
+    <input asp-for="UserName" placeholder="Name" id="username" /><br />
+    <input asp-for="Password" placeholder="Surname" id="password" /><br />
+    <button>Daxil Ol!</button>
+    <a asp-action="Register">Qeydiyyatdan kec</a>
+</form>
+
+
+
+<environment include="Development">
+    <script>
+        document.getElementById('username').value = "aydansn@code.edu.az";
+        document.getElementById('password').value = "Ca12345@@!";
+    </script>
+</environment>

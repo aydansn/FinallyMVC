@@ -15,9 +15,8 @@ namespace FinallyMVC.Domain.Business.InfoModule
     public class InfoEditCommand : IRequest<Info>
     {
         public int Id { get; set; }
-        public string ImageURL { get; set; }
 
-        public IFormFile Image { get; set; }
+        public IFormFile ImageURL { get; set; }
         public string Phone { get; set; }
         public string Body { get; set; }
 
@@ -46,12 +45,12 @@ namespace FinallyMVC.Domain.Business.InfoModule
                 model.Phone = request.Phone;
                 model.Body = request.Body;
 
-                if (request.Image == null)
+                if (request.ImageURL == null)
                     goto save;
 
-                string newImageName = request.Image.GetRandomImagePath("Info");
+                string newImageName = request.ImageURL.GetRandomImagePath("Info");
 
-                await env.SaveAsync(request.Image, newImageName, cancellationToken);
+                await env.SaveAsync(request.ImageURL, newImageName, cancellationToken);
 
                 env.ArchiveImage(model.ImageURL);
 

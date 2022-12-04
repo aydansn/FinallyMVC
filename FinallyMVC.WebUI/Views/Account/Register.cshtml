@@ -1,0 +1,19 @@
+﻿@model RegisterCommand
+
+@{
+    ViewData["Title"] = "Register";
+    Layout = null;
+}
+
+<form method="post">
+
+    <div asp-validation-summary="All"></div>
+
+    <input asp-for="Name" placeholder="Name"/><br/>
+    <input asp-for="Surname" placeholder="Surname"/><br/>
+    <input asp-for="Email" placeholder="Email"/><br/>
+    <input asp-for="Password" placeholder="Password"/><br/>
+    <input asp-for="ConfirmPassword" placeholder="ConfirmPassword"/><br/>
+    <button>Qeydiyyat!</button>
+</form>
+

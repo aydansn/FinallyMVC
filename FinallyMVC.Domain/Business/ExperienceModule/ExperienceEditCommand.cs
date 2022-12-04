@@ -1,7 +1,9 @@
 ﻿using FinallyMVC.Domain.Models.DataContexts;
 using FinallyMVC.Domain.Models.Entities;
 using MediatR;
+using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
+using System;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -10,7 +12,13 @@ namespace FinallyMVC.Domain.Business.ExperienceModule
     public class ExperienceEditCommand : IRequest<Experience>
     {
         public int Id { get; set; }
-        public string ImageURL { get; set; }
+        public IFormFile ImageURL { get; set; }
+
+        public DateTime? Date { get; set; }
+        public string Place { get; set; }
+        public string Body { get; set; }
+        public string Profession { get; set; }
+
         public class ExperienceEditCommandHandler : IRequestHandler<ExperienceEditCommand, Experience>
         {
             private readonly AppDbContext db;
@@ -31,7 +39,10 @@ namespace FinallyMVC.Domain.Business.ExperienceModule
                 }
 
                 Experience.Id = request.Id;
-                Experience.ImageURL = request.ImageURL;
+                Experience.Place = request.Place;
+                Experience.Body = request.Body;
+                Experience.Profession = request.Profession;
+                Experience.Date = DateTime.UtcNow.AddHours(4);
 
                 await db.SaveChangesAsync(cancellationToken);
 

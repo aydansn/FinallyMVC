@@ -1,33 +1,66 @@
 ﻿@{
     ViewData["Title"] = "Index";
 }
-<h5 class="tittle">Contact Me</h5>
-<div class="contact padding-25">
-    <!-- Success Msg -->
-    <div id="contact_message" class="success-msg"> <i class="fa fa-paper-plane-o"></i>Thank You. Your Message has been Submitted</div>
+<div class="inside-sec">
+    <!-- BIO AND SKILLS -->
+    <h5 class="tittle">BLOG</h5>
 
-    <!-- FORM -->
-    <form role="form" id="contact_form" class="contact-form" method="post" onSubmit="return false">
-        <ul class="row">
-            <li class="col-sm-12">
-                <label>
-                    <input type="text" class="form-control" name="email" id="email" placeholder="Email">
-                </label>
-            </li>
-            <li class="col-sm-12">
-                <label>
-                    <input type="text" class="form-control" name="company" id="company" placeholder="Subject">
-                </label>
-            </li>
-            <li class="col-sm-12">
-                <label>
-                    <textarea class="form-control" name="message" id="message" rows="5" placeholder="Message"></textarea>
-                </label>
-            </li>
-            <li class="col-sm-12">
-                <button type="submit" value="submit" id="btn_submit" onClick="proceed();">Send Message</button>
-            </li>
+    <!-- Blog -->
+    <section class="blog blog-page padding-20 padding-top-50 padding-bottom-50 ">
+
+        <!-- Blog Post -->
+        <article>
+            <img class="img-responsive" src="~/assets/images/blog-img-1.jpg" alt="">
+            <div class="post-info">
+                <div class="post-in">
+                    <div class="extra"> <span><i class="icon-calendar"></i>Aug 29, 2015</span> <span class="margin-left-15"><i class="icon-user"></i>Admin</span> <span class="margin-left-15"><i class="icon-bubbles"></i> Featured</span></div>
+                    <a href="#." class="tittle-post"> ENJOYING THE SMALL THINGS </a>
+                    <p> 
+                        sevdiklerimle gezmek, yeni mekanlar kesf etmek. Deyer verdiyim insanlara sruprizler etmek , eyni zamanda onlarinda mene sruprizler etmesi. Yeni geyimler, esyalar almaq. Yagisli havada gezmek. Yemek yemek)
+                    </p>
+                    <a href="#." class="btn-1">Read MOre <i class="fa fa-angle-right"></i></a>
+                </div>
+            </div>
+        </article>
+
+        <!-- BLOG POST -->
+        <article>
+            <img class="img-responsive" src="~/assets/images/blog-img-2.jpg" alt="">
+            <div class="post-info">
+                <div class="post-in">
+                    <div class="extra"> <span><i class="icon-calendar"></i>Aug 29, 2015</span> <span class="margin-left-15"><i class="icon-user"></i>Admin</span> <span class="margin-left-15"><i class="icon-bubbles"></i> Featured</span></div>
+                    <a href="#." class="tittle-post"> ENJOYING THE SMALL THINGS </a>
+                     <p> 
+                        sevdiklerimle gezmek, yeni mekanlar kesf etmek. Deyer verdiyim insanlara sruprizler etmek , eyni zamanda onlarinda mene sruprizler etmesi. Yeni geyimler, esyalar almaq. Yagisli havada gezmek. Yemek yemek)
+                    </p>
+                    <a href="#." class="btn-1">Read MOre <i class="fa fa-angle-right"></i></a>
+   </div>
+            </div>
+        </article>
+
+        <!-- BLOG POST -->
+
+        <article>
+            <img class="img-responsive" src="~/assets/images/blog-img-3.jpg" alt="">
+            <div class="post-info">
+                <div class="post-in">
+                    <div class="extra"> <span><i class="icon-calendar"></i>Aug 29, 2015</span> <span class="margin-left-15"><i class="icon-user"></i>Admin</span> <span class="margin-left-15"><i class="icon-bubbles"></i> Featured</span></div>
+                    <a href="#." class="tittle-post"> ENJOYING THE SMALL THINGS </a>
+                    <p> 
+                        sevdiklerimle gezmek, yeni mekanlar kesf etmek. Deyer verdiyim insanlara sruprizler etmek , eyni zamanda onlarinda mene sruprizler etmesi. Yeni geyimler, esyalar almaq. Yagisli havada gezmek. Yemek yemek)
+                    </p> 
+                    <a href="#." class="btn-1">Read MOre <i class="fa fa-angle-right"></i></a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Pagination -->
+        <ul class="pagination">
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">Next</a></li>
         </ul>
-    </form>
+    </section>
 </div>
              

@@ -44,7 +44,7 @@ namespace FinallyMVC.Domain.Models.DataContexts
                     {
                         Email = adminEmail,
                         UserName = adminUserName,
-                        EmailConfirmed = true
+                        EmailConfirmed = true //tesdiq olunmush kimi elave edirik
                     };
 
                     userManager.CreateAsync(user, adminPassword).Wait();

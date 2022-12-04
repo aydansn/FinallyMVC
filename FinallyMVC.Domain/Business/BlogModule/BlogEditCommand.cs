@@ -1,6 +1,7 @@
 ﻿using FinallyMVC.Domain.Models.DataContexts;
 using FinallyMVC.Domain.Models.Entities;
 using MediatR;
+using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Threading;
@@ -13,7 +14,7 @@ namespace FinallyMVC.Domain.Business.BlogModule
         public int Id { get; set; }
         public string Title { get; set; }
         public string Body { get; set; }
-        public string ImageURL { get; set; }
+        public IFormFile ImageURL { get; set; }
         public DateTime? PublishDate { get; set; }
 
         public class BlogEditCommandHandler : IRequestHandler<BlogEditCommand, Blog>
@@ -38,8 +39,7 @@ namespace FinallyMVC.Domain.Business.BlogModule
                 Blog.Id = request.Id;
                 Blog.Title = request.Title;
                 Blog.Body = request.Body;
-                Blog.ImageURL = request.ImageURL;
-                Blog.PublishDate = request.PublishDate;
+                Blog.PublishDate = DateTime.UtcNow.AddHours(4);
 
                 await db.SaveChangesAsync(cancellationToken);
 

@@ -9,10 +9,10 @@ namespace FinallyMVC.WebUI.AppCode.ViewComponents
         {
 
         }
-
-        public async Task<IViewComponentResult>InvokeAsync()
+        public async Task<IViewComponentResult> InvokeAsync()
         {
             return View();
         }
+
     }
 }

@@ -2,6 +2,7 @@
 using FinallyMVC.Domain.Models.Entities;
 using MediatR;
 using Microsoft.Extensions.Hosting;
+using System;
 using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
@@ -10,7 +11,7 @@ namespace FinallyMVC.Domain.Business.BackgroundModule
 {
     public class BackgroundCreateCommand :IRequest<Background>
     {
-        public string Date { get; set; }
+        public DateTime? Date { get; set; }
         public string Place { get; set; }
         public string Body { get; set; }
         public string Profession { get; set; }
@@ -30,7 +31,7 @@ namespace FinallyMVC.Domain.Business.BackgroundModule
             {
                 var Background = new Background();
 
-                Background.Date = request.Date;
+                Background.Date = DateTime.UtcNow.AddHours(4);
                 Background.Place = request.Place;
                 Background.Body = request.Body;
                 Background.Profession = request.Profession;

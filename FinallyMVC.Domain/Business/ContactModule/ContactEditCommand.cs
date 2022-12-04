@@ -13,8 +13,7 @@ namespace FinallyMVC.Domain.Business.ContactModule
     public class ContactEditCommand : IRequest<Contact>
     {
         public int Id { get; set; }
-        public string ImageURL { get; set; }
-        public IFormFile Image { get; set; }
+        public IFormFile ImageURL { get; set; }
 
         public string Phone { get; set; }
         public string Title { get; set; }
@@ -45,12 +44,12 @@ namespace FinallyMVC.Domain.Business.ContactModule
                 model.Title = request.Title;
                 model.Body = request.Body;
 
-                if (request.Image == null)
+                if (request.ImageURL == null)
                     goto save;
 
-                string newImageName = request.Image.GetRandomImagePath("contact");
+                string newImageName = request.ImageURL.GetRandomImagePath("contact");
 
-                await env.SaveAsync(request.Image, newImageName, cancellationToken);
+                await env.SaveAsync(request.ImageURL, newImageName, cancellationToken);
 
                 env.ArchiveImage(model.ImageURL);
 

@@ -9,6 +9,7 @@ namespace Finallymvc.Domain.Models.DataContexts.Configurations.Membership
     {
         public void Configure(EntityTypeBuilder<FinallymvcUserRole> builder)
         {
+           
             builder.ToTable("UserRoles", "Membership");
         }
     }

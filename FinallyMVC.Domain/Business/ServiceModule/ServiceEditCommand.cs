@@ -15,8 +15,7 @@ namespace FinallyMVC.Domain.Business.ServiceModule
     public class ServiceEditCommand : IRequest<Service>
     {
         public int Id { get; set; }
-        public string ImageURL { get; set; }
-        public IFormFile Image { get; set; }
+        public IFormFile ImageURL { get; set; }
         public string Title { get; set; }
         public string Body { get; set; }
         public class ServiceEditCommandHandler : IRequestHandler<ServiceEditCommand, Service>
@@ -42,13 +41,14 @@ namespace FinallyMVC.Domain.Business.ServiceModule
                 }
                 model.Id = request.Id;
                 model.Body = request.Body;
+                model.Title = request.Title;
 
-                if (request.Image == null)
+                if (request.ImageURL == null)
                     goto save;
 
-                string newImageName = request.Image.GetRandomImagePath("Service");
+                string newImageName = request.ImageURL.GetRandomImagePath("Service");
 
-                await env.SaveAsync(request.Image, newImageName, cancellationToken);
+                await env.SaveAsync(request.ImageURL, newImageName, cancellationToken);
 
                 env.ArchiveImage(model.ImageURL);
 

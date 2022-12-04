@@ -13,35 +13,49 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
-#line 1 "C:\Users\user\Desktop\P412\FinalyMVC Solution\FinallyMVC.WebUI\Views\_ViewImports.cshtml"
+#line 2 "C:\Users\user\Desktop\P412\FinalyMVC Solution\FinallyMVC.WebUI\Views\_ViewImports.cshtml"
 using FinallyMVC.WebUI;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\user\Desktop\P412\FinalyMVC Solution\FinallyMVC.WebUI\Views\_ViewImports.cshtml"
+#line 3 "C:\Users\user\Desktop\P412\FinalyMVC Solution\FinallyMVC.WebUI\Views\_ViewImports.cshtml"
 using FinallyMVC.Domain.Models.Entities;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\user\Desktop\P412\FinalyMVC Solution\FinallyMVC.WebUI\Views\_ViewImports.cshtml"
+#line 4 "C:\Users\user\Desktop\P412\FinalyMVC Solution\FinallyMVC.WebUI\Views\_ViewImports.cshtml"
 using FinallyMVC.Domain.Business.PersonModule;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\user\Desktop\P412\FinalyMVC Solution\FinallyMVC.WebUI\Views\_ViewImports.cshtml"
+#line 5 "C:\Users\user\Desktop\P412\FinalyMVC Solution\FinallyMVC.WebUI\Views\_ViewImports.cshtml"
+using FinallyMVC.Domain.AppCode.Extensions;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 6 "C:\Users\user\Desktop\P412\FinalyMVC Solution\FinallyMVC.WebUI\Views\_ViewImports.cshtml"
 using FinallyMVC.WebUI.AppCode.ViewComponents;
 
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 7 "C:\Users\user\Desktop\P412\FinalyMVC Solution\FinallyMVC.WebUI\Views\_ViewImports.cshtml"
+using FinallyMVC.Domain.Business.AccountModule;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7091c65830b0329e613be026ede8a57552863778", @"/Views/_ViewStart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"03963baef84de21697033b328ea81d127b38d7c3", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"33b659defb6030d2219119789cf7a31b628f3e0d", @"/Views/_ViewImports.cshtml")]
     public class Views__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

@@ -14,10 +14,6 @@ namespace FinallyMVC.Domain.Validators.InfoValidators
             RuleFor(m => m.Phone)
                .NotEmpty()
                .WithMessage("Nomre qeyd edilmeyib");
-            RuleFor(b => b.ImageURL)
-
-                .NotNull()
-                .WithMessage("Sekil secilmeyib");
         }
     }
 }
