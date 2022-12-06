@@ -1,4 +1,5 @@
-﻿using FinallyMVC.Domain.Models.DataContexts;
+﻿using FinallyMVC.Domain.Business.Enums;
+using FinallyMVC.Domain.Models.DataContexts;
 using FinallyMVC.Domain.Models.Entities;
 using MediatR;
 using System;
@@ -12,6 +13,7 @@ namespace FinallyMVC.Domain.Business.SkillModule
         public string Body { get; set; }
         public string job { get; set; }
         public string WorkPlace { get; set; }
+        public SkillType SkillType { get; set; }
 
         public class SkillCreateCommandHandler : IRequestHandler<SkillCreateCommand, Skill>
         {
@@ -29,7 +31,8 @@ namespace FinallyMVC.Domain.Business.SkillModule
                     
                     Body = request.Body, 
                     job = request.job,
-                    WorkPlace= request.WorkPlace
+                    WorkPlace= request.WorkPlace,
+                    SkillType = request.SkillType
                 };
 
                 await db.Skills.AddAsync(Skill, cancellationToken);

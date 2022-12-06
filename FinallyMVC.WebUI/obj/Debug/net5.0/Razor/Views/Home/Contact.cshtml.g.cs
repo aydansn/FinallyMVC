@@ -35,27 +35,34 @@ using FinallyMVC.Domain.Business.PersonModule;
 #nullable disable
 #nullable restore
 #line 5 "C:\Users\user\Desktop\P412\FinalyMVC Solution\FinallyMVC.WebUI\Views\_ViewImports.cshtml"
-using FinallyMVC.Domain.AppCode.Extensions;
+using FinallyMVC.Domain.Business.PortfolioModule;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 6 "C:\Users\user\Desktop\P412\FinalyMVC Solution\FinallyMVC.WebUI\Views\_ViewImports.cshtml"
-using FinallyMVC.WebUI.AppCode.ViewComponents;
+using FinallyMVC.Domain.AppCode.Extensions;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 7 "C:\Users\user\Desktop\P412\FinalyMVC Solution\FinallyMVC.WebUI\Views\_ViewImports.cshtml"
+using FinallyMVC.WebUI.AppCode.ViewComponents;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 8 "C:\Users\user\Desktop\P412\FinalyMVC Solution\FinallyMVC.WebUI\Views\_ViewImports.cshtml"
 using FinallyMVC.Domain.Business.AccountModule;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d8a4d454f6a215547d6a231163fd87b46bc38a70", @"/Views/Home/Contact.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"33b659defb6030d2219119789cf7a31b628f3e0d", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"12249a66a70a69657e8af696dd8a41790f0c582d", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Contact : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("role", new global::Microsoft.AspNetCore.Html.HtmlString("form"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -156,7 +163,7 @@ using FinallyMVC.Domain.Business.AccountModule;
 
                 <!-- FORM -->
                 ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d8a4d454f6a215547d6a231163fd87b46bc38a709205", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d8a4d454f6a215547d6a231163fd87b46bc38a709425", async() => {
                 WriteLiteral(@"
                     <ul class=""row"">
                         <li class=""col-sm-4"">

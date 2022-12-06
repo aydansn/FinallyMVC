@@ -35,27 +35,34 @@ using FinallyMVC.Domain.Business.PersonModule;
 #nullable disable
 #nullable restore
 #line 5 "C:\Users\user\Desktop\P412\FinalyMVC Solution\FinallyMVC.WebUI\Views\_ViewImports.cshtml"
-using FinallyMVC.Domain.AppCode.Extensions;
+using FinallyMVC.Domain.Business.PortfolioModule;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 6 "C:\Users\user\Desktop\P412\FinalyMVC Solution\FinallyMVC.WebUI\Views\_ViewImports.cshtml"
-using FinallyMVC.WebUI.AppCode.ViewComponents;
+using FinallyMVC.Domain.AppCode.Extensions;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 7 "C:\Users\user\Desktop\P412\FinalyMVC Solution\FinallyMVC.WebUI\Views\_ViewImports.cshtml"
+using FinallyMVC.WebUI.AppCode.ViewComponents;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 8 "C:\Users\user\Desktop\P412\FinalyMVC Solution\FinallyMVC.WebUI\Views\_ViewImports.cshtml"
 using FinallyMVC.Domain.Business.AccountModule;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"2d9c5f5c2d206696f66ff8958a3d098262bca68b", @"/Views/Blog/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"33b659defb6030d2219119789cf7a31b628f3e0d", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"12249a66a70a69657e8af696dd8a41790f0c582d", @"/Views/_ViewImports.cshtml")]
     public class Views_Blog_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("img-responsive"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -96,7 +103,7 @@ using FinallyMVC.Domain.Business.AccountModule;
 #line hidden
 #nullable disable
             WriteLiteral("<div class=\"inside-sec\">\r\n    <!-- BIO AND SKILLS -->\r\n    <h5 class=\"tittle\">BLOG</h5>\r\n\r\n    <!-- Blog -->\r\n    <section class=\"blog blog-page padding-20 padding-top-50 padding-bottom-50 \">\r\n\r\n        <!-- Blog Post -->\r\n        <article>\r\n            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "2d9c5f5c2d206696f66ff8958a3d098262bca68b6277", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "2d9c5f5c2d206696f66ff8958a3d098262bca68b6497", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -127,7 +134,7 @@ using FinallyMVC.Domain.Business.AccountModule;
         <!-- BLOG POST -->
         <article>
             ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "2d9c5f5c2d206696f66ff8958a3d098262bca68b8407", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "2d9c5f5c2d206696f66ff8958a3d098262bca68b8627", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -159,7 +166,7 @@ using FinallyMVC.Domain.Business.AccountModule;
 
         <article>
             ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "2d9c5f5c2d206696f66ff8958a3d098262bca68b10527", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "2d9c5f5c2d206696f66ff8958a3d098262bca68b10747", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

@@ -35,27 +35,34 @@ using FinallyMVC.Domain.Business.PersonModule;
 #nullable disable
 #nullable restore
 #line 5 "C:\Users\user\Desktop\P412\FinalyMVC Solution\FinallyMVC.WebUI\Views\_ViewImports.cshtml"
-using FinallyMVC.Domain.AppCode.Extensions;
+using FinallyMVC.Domain.Business.PortfolioModule;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 6 "C:\Users\user\Desktop\P412\FinalyMVC Solution\FinallyMVC.WebUI\Views\_ViewImports.cshtml"
-using FinallyMVC.WebUI.AppCode.ViewComponents;
+using FinallyMVC.Domain.AppCode.Extensions;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 7 "C:\Users\user\Desktop\P412\FinalyMVC Solution\FinallyMVC.WebUI\Views\_ViewImports.cshtml"
+using FinallyMVC.WebUI.AppCode.ViewComponents;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 8 "C:\Users\user\Desktop\P412\FinalyMVC Solution\FinallyMVC.WebUI\Views\_ViewImports.cshtml"
 using FinallyMVC.Domain.Business.AccountModule;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"bcf55db891910e9e072faa6fde6a298434aa3597", @"/Views/Account/EmailConfirmation.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"33b659defb6030d2219119789cf7a31b628f3e0d", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"12249a66a70a69657e8af696dd8a41790f0c582d", @"/Views/_ViewImports.cshtml")]
     public class Views_Account_EmailConfirmation : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<RegisterConfirmationCommand>
     {
         #line hidden
@@ -92,7 +99,7 @@ using FinallyMVC.Domain.Business.AccountModule;
 #line hidden
 #nullable disable
             WriteLiteral("\r\n<h1>EmailConfirmation</h1>\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("div", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bcf55db891910e9e072faa6fde6a298434aa35974390", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("div", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bcf55db891910e9e072faa6fde6a298434aa35974610", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationSummaryTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.ValidationSummaryTagHelper>();

@@ -53,6 +53,22 @@
                             <span asp-validation-for="Body" class="text-danger"></span>
                         </div>
                     </div>
+
+                      <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" asp-for="job"></label>
+                        <div class="col-sm-10">
+                            <input class="form-control" asp-for="job" />
+                            <span asp-validation-for="job" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                      <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" asp-for="WorkPlace"></label>
+                        <div class="col-sm-10">
+                            <input class="form-control" asp-for="WorkPlace" />
+                            <span asp-validation-for="WorkPlace" class="text-danger"></span>
+                        </div>
+                    </div>
                     <div class="form-group row">
                         <div class="col-12 d-flex justify-content-end">
                             <input type="hidden" asp-for="Id" />

@@ -1,4 +1,5 @@
-﻿using FinallyMVC.Domain.Models.DataContexts;
+﻿using FinallyMVC.Domain.Business.Enums;
+using FinallyMVC.Domain.Models.DataContexts;
 using FinallyMVC.Domain.Models.Entities;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
@@ -14,6 +15,7 @@ namespace FinallyMVC.Domain.Business.SkillModule
         public string Body { get; set; }
         public string job { get; set; }
         public string WorkPlace { get; set; }
+        public SkillType SkillType { get; set; }
 
         public class SkillEditCommandHandler : IRequestHandler<SkillEditCommand, Skill>
         {
@@ -38,6 +40,7 @@ namespace FinallyMVC.Domain.Business.SkillModule
                 Skill.Body = request.Body;
                 Skill.job = request.job;
                 Skill.WorkPlace = request.WorkPlace;
+                Skill.SkillType = request.SkillType;
 
                 await db.SaveChangesAsync(cancellationToken);
 

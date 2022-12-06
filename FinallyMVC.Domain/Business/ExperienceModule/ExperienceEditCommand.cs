@@ -1,4 +1,5 @@
-﻿using FinallyMVC.Domain.Models.DataContexts;
+﻿using FinallyMVC.Domain.Business.Enums;
+using FinallyMVC.Domain.Models.DataContexts;
 using FinallyMVC.Domain.Models.Entities;
 using MediatR;
 using Microsoft.AspNetCore.Http;
@@ -18,6 +19,7 @@ namespace FinallyMVC.Domain.Business.ExperienceModule
         public string Place { get; set; }
         public string Body { get; set; }
         public string Profession { get; set; }
+        public ExperienceType ExperienceType { get; set; }
 
         public class ExperienceEditCommandHandler : IRequestHandler<ExperienceEditCommand, Experience>
         {
@@ -42,6 +44,7 @@ namespace FinallyMVC.Domain.Business.ExperienceModule
                 Experience.Place = request.Place;
                 Experience.Body = request.Body;
                 Experience.Profession = request.Profession;
+                Experience.ExperienceType = request.ExperienceType;
                 Experience.Date = DateTime.UtcNow.AddHours(4);
 
                 await db.SaveChangesAsync(cancellationToken);

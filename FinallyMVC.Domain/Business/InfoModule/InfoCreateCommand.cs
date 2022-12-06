@@ -12,9 +12,11 @@ namespace FinallyMVC.Domain.Business.InfoModule
 {
     public class InfoCreateCommand : IRequest<Info>
     {
-        public IFormFile ImageURL { get; set; }
+        public IFormFile Image{ get; set; }
         public string Phone { get; set; }
         public string Body { get; set; }
+
+
 
         public class InfoCreateCommandHandler : IRequestHandler<InfoCreateCommand, Info>
         {
@@ -36,8 +38,8 @@ namespace FinallyMVC.Domain.Business.InfoModule
                     Body = request.Body
                 };
 
-                Info.ImageURL = request.ImageURL.GetRandomImagePath("info");
-                await env.SaveAsync(request.ImageURL, Info.ImageURL, cancellationToken);
+                Info.ImageURL = request.Image.GetRandomImagePath("info");
+                await env.SaveAsync(request.Image, Info.ImageURL, cancellationToken);
                 await db.Infos.AddAsync(Info, cancellationToken);
                 await db.SaveChangesAsync(cancellationToken);
 

@@ -3,7 +3,19 @@
 @foreach (var item in Model)
 {
     <tr>
-        <td>@item.Body</td>
+        <td class="image-cell">
+            @if (!string.IsNullOrWhiteSpace(item.ImageURL))
+            {
+                <img src="~/uploads/images/@item.ImageURL" />
+            }
+        </td>
+         <td class="cell-medium">
+            @item.Body.ToPlainText()
+        </td>
+        <td class="cell-medium">
+            @item.Title
+        </td>
+       
         <td class="operation">
             <a asp-action="edit" asp-route-id="@item.Id" class="btn btn-warning">
                 <i class="fa fa-pencil"></i>

@@ -14,6 +14,7 @@ namespace FinallyMVC.Domain.Models.DataContexts
         }
 
         public DbSet<Background> Backgrounds { get; set; }
+        public DbSet<Portfolio> Portfolios { get; set; }
         public DbSet<Blog> Blogs { get; set; }
         public DbSet<Contact> Contacts { get; set; }
         public DbSet<Experience> Experiences { get; set; }

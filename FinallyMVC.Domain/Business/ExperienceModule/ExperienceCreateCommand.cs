@@ -1,4 +1,5 @@
 ﻿using FinallyMVC.Domain.AppCode.Extensions;
+using FinallyMVC.Domain.Business.Enums;
 using FinallyMVC.Domain.Models.DataContexts;
 using FinallyMVC.Domain.Models.Entities;
 using MediatR;
@@ -17,6 +18,7 @@ namespace FinallyMVC.Domain.Business.ExperienceModule
         public string Place { get; set; }
         public string Body { get; set; }
         public string Profession { get; set; }
+        public ExperienceType ExperienceType { get; set; }
         public class ExperienceCreateCommandHandler : IRequestHandler<ExperienceCreateCommand, Experience>
         {
             private readonly AppDbContext db;
@@ -36,7 +38,8 @@ namespace FinallyMVC.Domain.Business.ExperienceModule
                    Date = DateTime.UtcNow.AddHours(4),
                    Place = request.Place,
                    Body = request.Body,
-                   Profession = request.Profession
+                   Profession = request.Profession,
+                   ExperienceType = request.ExperienceType
             };
 
                 Experience.ImageURL = request.ImageURL.GetRandomImagePath("experience");
