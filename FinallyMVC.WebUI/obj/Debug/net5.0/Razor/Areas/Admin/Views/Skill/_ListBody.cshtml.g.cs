@@ -49,48 +49,55 @@ using FinallyMVC.Domain.Business.BackgroundModule;
 #nullable disable
 #nullable restore
 #line 12 "C:\Users\user\Desktop\P412\FinalyMVC Solution\FinallyMVC.WebUI\Areas\Admin\Views\_ViewImports.cshtml"
-using FinallyMVC.Domain.Business.BlogModule;
+using FinallyMVC.Domain.Business.PortfolioModule;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 13 "C:\Users\user\Desktop\P412\FinalyMVC Solution\FinallyMVC.WebUI\Areas\Admin\Views\_ViewImports.cshtml"
-using FinallyMVC.Domain.Business.ContactModule;
+using FinallyMVC.Domain.Business.BlogModule;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 14 "C:\Users\user\Desktop\P412\FinalyMVC Solution\FinallyMVC.WebUI\Areas\Admin\Views\_ViewImports.cshtml"
-using FinallyMVC.Domain.Business.ExperienceModule;
+using FinallyMVC.Domain.Business.ContactModule;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 15 "C:\Users\user\Desktop\P412\FinalyMVC Solution\FinallyMVC.WebUI\Areas\Admin\Views\_ViewImports.cshtml"
-using FinallyMVC.Domain.Business.ServiceModule;
+using FinallyMVC.Domain.Business.ExperienceModule;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 16 "C:\Users\user\Desktop\P412\FinalyMVC Solution\FinallyMVC.WebUI\Areas\Admin\Views\_ViewImports.cshtml"
-using FinallyMVC.Domain.Business.SkillModule;
+using FinallyMVC.Domain.Business.ServiceModule;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 17 "C:\Users\user\Desktop\P412\FinalyMVC Solution\FinallyMVC.WebUI\Areas\Admin\Views\_ViewImports.cshtml"
+using FinallyMVC.Domain.Business.SkillModule;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 18 "C:\Users\user\Desktop\P412\FinalyMVC Solution\FinallyMVC.WebUI\Areas\Admin\Views\_ViewImports.cshtml"
 using FinallyMVC.Domain.Business.InfoModule;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f5ff871d8aa939582e0185d827c4c9c40324dfba", @"/Areas/Admin/Views/Skill/_ListBody.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"eb5fbd8ee82157dc9edb68a35a9f8db59ddfadde", @"/Areas/Admin/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"13af9ceab4156b7924783393b86551e55ac62c20", @"/Areas/Admin/Views/_ViewImports.cshtml")]
     public class Areas_Admin_Views_Skill__ListBody : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<Skill>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-action", "edit", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -163,7 +170,7 @@ using FinallyMVC.Domain.Business.InfoModule;
 #line hidden
 #nullable disable
             WriteLiteral("\r\n        </td>\r\n      \r\n        <td class=\"operation\">\r\n            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f5ff871d8aa939582e0185d827c4c9c40324dfba8218", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f5ff871d8aa939582e0185d827c4c9c40324dfba8451", async() => {
                 WriteLiteral("\r\n                <i class=\"fa fa-pencil\"></i>\r\n            ");
             }
             );
@@ -195,7 +202,7 @@ using FinallyMVC.Domain.Business.InfoModule;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f5ff871d8aa939582e0185d827c4c9c40324dfba10542", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f5ff871d8aa939582e0185d827c4c9c40324dfba10775", async() => {
                 WriteLiteral("\r\n                <i class=\"fa fa-eye\"></i>\r\n            ");
             }
             );

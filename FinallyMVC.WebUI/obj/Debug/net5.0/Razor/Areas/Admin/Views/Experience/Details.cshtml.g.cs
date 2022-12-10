@@ -49,48 +49,55 @@ using FinallyMVC.Domain.Business.BackgroundModule;
 #nullable disable
 #nullable restore
 #line 12 "C:\Users\user\Desktop\P412\FinalyMVC Solution\FinallyMVC.WebUI\Areas\Admin\Views\_ViewImports.cshtml"
-using FinallyMVC.Domain.Business.BlogModule;
+using FinallyMVC.Domain.Business.PortfolioModule;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 13 "C:\Users\user\Desktop\P412\FinalyMVC Solution\FinallyMVC.WebUI\Areas\Admin\Views\_ViewImports.cshtml"
-using FinallyMVC.Domain.Business.ContactModule;
+using FinallyMVC.Domain.Business.BlogModule;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 14 "C:\Users\user\Desktop\P412\FinalyMVC Solution\FinallyMVC.WebUI\Areas\Admin\Views\_ViewImports.cshtml"
-using FinallyMVC.Domain.Business.ExperienceModule;
+using FinallyMVC.Domain.Business.ContactModule;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 15 "C:\Users\user\Desktop\P412\FinalyMVC Solution\FinallyMVC.WebUI\Areas\Admin\Views\_ViewImports.cshtml"
-using FinallyMVC.Domain.Business.ServiceModule;
+using FinallyMVC.Domain.Business.ExperienceModule;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 16 "C:\Users\user\Desktop\P412\FinalyMVC Solution\FinallyMVC.WebUI\Areas\Admin\Views\_ViewImports.cshtml"
-using FinallyMVC.Domain.Business.SkillModule;
+using FinallyMVC.Domain.Business.ServiceModule;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 17 "C:\Users\user\Desktop\P412\FinalyMVC Solution\FinallyMVC.WebUI\Areas\Admin\Views\_ViewImports.cshtml"
+using FinallyMVC.Domain.Business.SkillModule;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 18 "C:\Users\user\Desktop\P412\FinalyMVC Solution\FinallyMVC.WebUI\Areas\Admin\Views\_ViewImports.cshtml"
 using FinallyMVC.Domain.Business.InfoModule;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f24338c0e4c2bb8b2ae16612000ba4848472e6e3", @"/Areas/Admin/Views/Experience/Details.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"eb5fbd8ee82157dc9edb68a35a9f8db59ddfadde", @"/Areas/Admin/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"13af9ceab4156b7924783393b86551e55ac62c20", @"/Areas/Admin/Views/_ViewImports.cshtml")]
     public class Areas_Admin_Views_Experience_Details : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<Experience>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("col-sm-2 col-form-label"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -178,7 +185,7 @@ using FinallyMVC.Domain.Business.InfoModule;
                 <div>
                     <div class=""form-group row"">
                         ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("label", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f24338c0e4c2bb8b2ae16612000ba4848472e6e39103", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("label", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f24338c0e4c2bb8b2ae16612000ba4848472e6e39336", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.LabelTagHelper>();
@@ -208,7 +215,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper.For = ModelExpressionProvid
 #line hidden
 #nullable disable
             WriteLiteral("\r\n                            </p>\r\n                        </div>\r\n\r\n                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("label", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f24338c0e4c2bb8b2ae16612000ba4848472e6e311159", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("label", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f24338c0e4c2bb8b2ae16612000ba4848472e6e311392", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.LabelTagHelper>();
@@ -238,7 +245,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper.For = ModelExpressionProvid
 #line hidden
 #nullable disable
             WriteLiteral("\r\n                            </p>\r\n                        </div>\r\n\r\n                         ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("label", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f24338c0e4c2bb8b2ae16612000ba4848472e6e313215", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("label", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f24338c0e4c2bb8b2ae16612000ba4848472e6e313448", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.LabelTagHelper>();
@@ -268,7 +275,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper.For = ModelExpressionProvid
 #line hidden
 #nullable disable
             WriteLiteral("\r\n                            </p>\r\n                        </div>\r\n\r\n                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("label", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f24338c0e4c2bb8b2ae16612000ba4848472e6e315282", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("label", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f24338c0e4c2bb8b2ae16612000ba4848472e6e315515", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.LabelTagHelper>();
@@ -306,7 +313,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper.For = ModelExpressionProvid
                     <div class=""form-group row"">
                         <div class=""col-12 d-flex justify-content-end"">
                             ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f24338c0e4c2bb8b2ae16612000ba4848472e6e317517", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f24338c0e4c2bb8b2ae16612000ba4848472e6e317750", async() => {
                 WriteLiteral("Edit");
             }
             );
@@ -338,7 +345,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper.For = ModelExpressionProvid
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f24338c0e4c2bb8b2ae16612000ba4848472e6e319842", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f24338c0e4c2bb8b2ae16612000ba4848472e6e320075", async() => {
                 WriteLiteral("Go Back");
             }
             );

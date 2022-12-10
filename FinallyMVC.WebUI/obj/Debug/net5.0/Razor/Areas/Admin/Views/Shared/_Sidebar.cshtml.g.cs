@@ -49,48 +49,55 @@ using FinallyMVC.Domain.Business.BackgroundModule;
 #nullable disable
 #nullable restore
 #line 12 "C:\Users\user\Desktop\P412\FinalyMVC Solution\FinallyMVC.WebUI\Areas\Admin\Views\_ViewImports.cshtml"
-using FinallyMVC.Domain.Business.BlogModule;
+using FinallyMVC.Domain.Business.PortfolioModule;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 13 "C:\Users\user\Desktop\P412\FinalyMVC Solution\FinallyMVC.WebUI\Areas\Admin\Views\_ViewImports.cshtml"
-using FinallyMVC.Domain.Business.ContactModule;
+using FinallyMVC.Domain.Business.BlogModule;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 14 "C:\Users\user\Desktop\P412\FinalyMVC Solution\FinallyMVC.WebUI\Areas\Admin\Views\_ViewImports.cshtml"
-using FinallyMVC.Domain.Business.ExperienceModule;
+using FinallyMVC.Domain.Business.ContactModule;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 15 "C:\Users\user\Desktop\P412\FinalyMVC Solution\FinallyMVC.WebUI\Areas\Admin\Views\_ViewImports.cshtml"
-using FinallyMVC.Domain.Business.ServiceModule;
+using FinallyMVC.Domain.Business.ExperienceModule;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 16 "C:\Users\user\Desktop\P412\FinalyMVC Solution\FinallyMVC.WebUI\Areas\Admin\Views\_ViewImports.cshtml"
-using FinallyMVC.Domain.Business.SkillModule;
+using FinallyMVC.Domain.Business.ServiceModule;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 17 "C:\Users\user\Desktop\P412\FinalyMVC Solution\FinallyMVC.WebUI\Areas\Admin\Views\_ViewImports.cshtml"
+using FinallyMVC.Domain.Business.SkillModule;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 18 "C:\Users\user\Desktop\P412\FinalyMVC Solution\FinallyMVC.WebUI\Areas\Admin\Views\_ViewImports.cshtml"
 using FinallyMVC.Domain.Business.InfoModule;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"969bc9d159c6b38ec726b94cdcf45dd34d1a9bf2", @"/Areas/Admin/Views/Shared/_Sidebar.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"eb5fbd8ee82157dc9edb68a35a9f8db59ddfadde", @"/Areas/Admin/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"13af9ceab4156b7924783393b86551e55ac62c20", @"/Areas/Admin/Views/_ViewImports.cshtml")]
     public class Areas_Admin_Views_Shared__Sidebar : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-controller", "home", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -129,7 +136,7 @@ using FinallyMVC.Domain.Business.InfoModule;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("\r\n\r\n<nav class=\"pcoded-navbar\">\r\n    <div class=\"pcoded-inner-navbar main-menu\">\r\n        <div class=\"pcoded-navigatio-lavel\">Navigation</div>\r\n        <ul class=\"pcoded-item pcoded-left-item\">\r\n            <li>\r\n                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "969bc9d159c6b38ec726b94cdcf45dd34d1a9bf28895", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "969bc9d159c6b38ec726b94cdcf45dd34d1a9bf29128", async() => {
                 WriteLiteral("\r\n                    <span class=\"pcoded-micon\"><i class=\"feather icon-menu\"></i></span>\r\n                    <span class=\"pcoded-mtext\">Ana səhifə</span>\r\n                ");
             }
             );
@@ -157,7 +164,7 @@ using FinallyMVC.Domain.Business.InfoModule;
                 <ul class=""pcoded-submenu"">
                     <li>
                         ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "969bc9d159c6b38ec726b94cdcf45dd34d1a9bf210826", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "969bc9d159c6b38ec726b94cdcf45dd34d1a9bf211059", async() => {
                 WriteLiteral("\r\n                            <span class=\"pcoded-mtext\">Person</span>\r\n                        ");
             }
             );
@@ -175,7 +182,7 @@ using FinallyMVC.Domain.Business.InfoModule;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                    </li>\r\n                    <li>\r\n                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "969bc9d159c6b38ec726b94cdcf45dd34d1a9bf212365", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "969bc9d159c6b38ec726b94cdcf45dd34d1a9bf212598", async() => {
                 WriteLiteral("\r\n                            <span class=\"pcoded-mtext\">Background</span>\r\n                        ");
             }
             );
@@ -193,7 +200,7 @@ using FinallyMVC.Domain.Business.InfoModule;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                    </li>\r\n                    <li>\r\n                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "969bc9d159c6b38ec726b94cdcf45dd34d1a9bf213908", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "969bc9d159c6b38ec726b94cdcf45dd34d1a9bf214141", async() => {
                 WriteLiteral("\r\n                            <span class=\"pcoded-micon\"><i class=\"feather icon-menu\"></i></span>\r\n                            <span class=\"pcoded-mtext\">Info</span>\r\n                        ");
             }
             );
@@ -211,7 +218,7 @@ using FinallyMVC.Domain.Business.InfoModule;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                    </li>\r\n                    <li>\r\n                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "969bc9d159c6b38ec726b94cdcf45dd34d1a9bf215548", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "969bc9d159c6b38ec726b94cdcf45dd34d1a9bf215781", async() => {
                 WriteLiteral("\r\n                            <span class=\"pcoded-mtext\">Blog</span>\r\n                        ");
             }
             );
@@ -229,7 +236,7 @@ using FinallyMVC.Domain.Business.InfoModule;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                    </li>\r\n                    <li>\r\n                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "969bc9d159c6b38ec726b94cdcf45dd34d1a9bf217085", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "969bc9d159c6b38ec726b94cdcf45dd34d1a9bf217318", async() => {
                 WriteLiteral("\r\n                            <span class=\"pcoded-mtext\">Experience</span>\r\n                            <span class=\"pcoded-badge label label-info \">NEW</span>\r\n                        ");
             }
             );
@@ -247,7 +254,7 @@ using FinallyMVC.Domain.Business.InfoModule;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                    </li>\r\n                    <li>\r\n                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "969bc9d159c6b38ec726b94cdcf45dd34d1a9bf218717", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "969bc9d159c6b38ec726b94cdcf45dd34d1a9bf218950", async() => {
                 WriteLiteral("\r\n                            <span class=\"pcoded-mtext\">Service</span>\r\n                        ");
             }
             );
@@ -265,7 +272,7 @@ using FinallyMVC.Domain.Business.InfoModule;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                    </li>\r\n                    <li>\r\n                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "969bc9d159c6b38ec726b94cdcf45dd34d1a9bf220257", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "969bc9d159c6b38ec726b94cdcf45dd34d1a9bf220490", async() => {
                 WriteLiteral("\r\n                            <span class=\"pcoded-mtext\">Skill</span>\r\n                        ");
             }
             );
@@ -294,7 +301,7 @@ using FinallyMVC.Domain.Business.InfoModule;
                 <ul class=""pcoded-submenu"">
                     <li>
                         ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "969bc9d159c6b38ec726b94cdcf45dd34d1a9bf222155", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "969bc9d159c6b38ec726b94cdcf45dd34d1a9bf222388", async() => {
                 WriteLiteral("\r\n                            <span class=\"pcoded-mtext\">Hamısı</span>\r\n                        ");
             }
             );
